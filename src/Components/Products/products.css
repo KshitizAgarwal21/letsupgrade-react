@@ -1,0 +1,12 @@
+.selector{
+padding: 20px;
+margin: 20px;
+    background-color: #004f71;
+    width: 200px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+}

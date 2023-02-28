@@ -1,0 +1,14 @@
+ul li{
+    display: inline-block;
+   
+}
+ul{
+    margin: 0;
+}
+li{
+    padding: 20px;
+    cursor: pointer;
+}
+header{
+    background-color: dodgerblue;
+}

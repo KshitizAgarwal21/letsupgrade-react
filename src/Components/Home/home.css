@@ -1,0 +1,9 @@
+.ad{
+    background-color: orangered;
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 50px;
+    cursor: pointer;
+}
