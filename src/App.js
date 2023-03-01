@@ -7,6 +7,8 @@ import Services from "./Components/Services/Services";
 import Header from "./Components/Common/Header/Header";
 import Electronics from "./Components/Electronics/Electronics";
 import Fashion from "./Components/Fashion/Fashion";
+import MyOrders from "./Components/MyOrders/MyOrders";
+import ProtectedRoute from "./utils/ProtectedRoute";
 
 function App() {
   return (
@@ -21,6 +23,15 @@ function App() {
               <Route path="fashion" element={<Fashion />}></Route>
             </Route>
             <Route path="/services" element={<Services />}></Route>
+
+            <Route
+              path="/myorders"
+              element={
+                <ProtectedRoute>
+                  <MyOrders />
+                </ProtectedRoute>
+              }
+            />
           </Routes>
         </div>
       </BrowserRouter>

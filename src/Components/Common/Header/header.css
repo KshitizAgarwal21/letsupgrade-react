@@ -12,3 +12,7 @@ li{
 header{
     background-color: dodgerblue;
 }
+span{
+    cursor: pointer;
+    color: #fff;
+}
