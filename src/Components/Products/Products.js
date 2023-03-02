@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import "./products.css";
 export default function Products() {
+  var [isSale, setSale] = useState("Sale is On!!");
+  var [saleonmobile, updateSale] = useState("Huge sale on Mobiles");
   return (
     <div className="container">
       <div>
@@ -16,7 +18,7 @@ export default function Products() {
       </div>
       <div>
         <div className="product-content">
-          <Outlet />
+          <Outlet context={[isSale, setSale, saleonmobile]} />
         </div>
       </div>
     </div>

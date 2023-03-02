@@ -9,12 +9,21 @@ import Electronics from "./Components/Electronics/Electronics";
 import Fashion from "./Components/Fashion/Fashion";
 import MyOrders from "./Components/MyOrders/MyOrders";
 import ProtectedRoute from "./utils/ProtectedRoute";
+import { useState } from "react";
+import Sidenav from "./Components/Common/Sidenav/Sidenav";
 
 function App() {
+  var [visitcounter, setvisitCounter] = useState(0);
+  var [toggle, setToggle] = useState(true);
   return (
     <>
       <BrowserRouter>
-        <Header />
+        <Header
+          visitCounter={visitcounter}
+          toggle={toggle}
+          setToggle={setToggle}
+        />
+        <Sidenav myowntoggle={toggle} />
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />}></Route>
@@ -34,6 +43,13 @@ function App() {
             />
           </Routes>
         </div>
+        <button
+          onClick={() => {
+            setvisitCounter(++visitcounter);
+          }}
+        >
+          Click me
+        </button>
       </BrowserRouter>
     </>
   );
