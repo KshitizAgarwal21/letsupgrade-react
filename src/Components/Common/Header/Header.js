@@ -25,7 +25,7 @@ export default function Header(props) {
   return (
     <div>
       <header>
-        <span onClick={goback}>Back</span>
+        {/* <span onClick={goback}>Back</span>
         <span onClick={login}>Login</span>
         <span onClick={logout}>Logout</span>
         <span onClick={logout}>{props.visitCounter}</span>
@@ -35,7 +35,7 @@ export default function Header(props) {
           }}
         >
           toggle sidenav
-        </button>
+        </button> */}
         <ul>
           <Link to="/">
             <li>Home</li>

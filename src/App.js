@@ -11,10 +11,12 @@ import MyOrders from "./Components/MyOrders/MyOrders";
 import ProtectedRoute from "./utils/ProtectedRoute";
 import { useState } from "react";
 import Sidenav from "./Components/Common/Sidenav/Sidenav";
+import AppsChild from "./Components/AppsChild/AppsChild";
 
 function App() {
   var [visitcounter, setvisitCounter] = useState(0);
   var [toggle, setToggle] = useState(true);
+  var [data, setData] = useState({ name: "Letsupgrade" });
   return (
     <>
       <BrowserRouter>
@@ -23,7 +25,7 @@ function App() {
           toggle={toggle}
           setToggle={setToggle}
         />
-        <Sidenav myowntoggle={toggle} />
+        {/* <Sidenav myowntoggle={toggle} />
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />}></Route>
@@ -49,7 +51,8 @@ function App() {
           }}
         >
           Click me
-        </button>
+        </button> */}
+        <AppsChild data={data} />
       </BrowserRouter>
     </>
   );
