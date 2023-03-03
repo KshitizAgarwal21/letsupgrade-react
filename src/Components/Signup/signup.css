@@ -1,0 +1,12 @@
+.myform{
+    background-color: #dfdfdf;
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 100px;
+    padding: 25px;
+    border-radius: 20px;
+    height: 200px;
+}
+input{
+    margin-top: 10px;
+}

@@ -12,6 +12,7 @@ import ProtectedRoute from "./utils/ProtectedRoute";
 import { useState } from "react";
 import Sidenav from "./Components/Common/Sidenav/Sidenav";
 import AppsChild from "./Components/AppsChild/AppsChild";
+import Signup from "./Components/Signup/Signup";
 
 function App() {
   var [visitcounter, setvisitCounter] = useState(0);
@@ -52,7 +53,8 @@ function App() {
         >
           Click me
         </button> */}
-        <AppsChild data={data} />
+        {/* <AppsChild data={data} /> */}
+        <Signup />
       </BrowserRouter>
     </>
   );
